@@ -1,0 +1,40 @@
+.about {
+    padding-bottom: 94px;
+  }
+  
+  .about-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-title-color);
+    margin-bottom: 50px;
+  }
+  
+  .about-list {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .about-top {
+    position: relative;
+  }
+  
+  .about-top-text {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+    transform: translateY(-100%);
+    overflow: auto;
+  }

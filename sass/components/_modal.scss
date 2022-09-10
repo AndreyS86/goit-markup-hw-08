@@ -1,0 +1,209 @@
+.modal {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 528px;
+  height: 581px;
+  padding: 40px 39px 40px 41px;
+  background-color: #ffffff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1) rotate(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}  
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scale(0) rotate(-180deg);
+}
+
+.modal-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.03em;
+
+  color: #212121;
+  text-align: center;
+  margin-bottom: 12px;
+}
+
+.modal-form {
+  position: relative;
+  align-items: center;
+  margin: 0;
+}
+
+.input-field {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.input-wrap {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  &:hover {
+    fill: #2196f3;
+    outline-color: #2196f3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    fill: #2196f3;
+    outline-color: #2196f3;
+    border-color: #2196f3;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &:focus + .input-icon,
+  &:hover + .input-icon {
+    fill: var(--link-btn-color);
+  }
+}
+
+.input-title {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary-color);
+  display: block;
+  margin-bottom: 4px;
+}
+
+.input-textarea {
+  margin-bottom: 20px;
+}
+
+.coments-form {
+  width: 100%;
+  height: 120px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  display: block;
+  padding: 12px 16px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.coments-form:focus,
+.coments-form:hover {
+  fill: #2196f3;
+  outline-color: #2196f3;
+  border-color: #2196f3;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.agreement-text {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #757575;
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: center;
+  span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #000000;
+    border-radius: 3px;
+    margin-right: 8.38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  & .chek-icon {
+    fill: transparent;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .input-chek:checked + & span {
+    background-color: var(--link-btn-color);
+    border-color: var(--link-btn-color);
+  }
+  .input-chek:checked + & .chek-icon {
+    fill: #ffffff;
+  }
+  .input-chek:focus + & span {
+    border-color: var(--link-btn-color);
+  }
+}
+
+.chek-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--link-btn-color);
+  margin-left: 5px;
+}
+
+.input-icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-btn {
+  display: block;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  padding: 10px 52px;
+  height: 50px;
+  margin: 0 auto;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  right: 8px;
+  top: 8px;
+  padding: 0;
+  &:hover,
+  &:focus {
+    border-color: var(--link-btn-color);
+    fill: #2196f3;
+  }
+}
+
