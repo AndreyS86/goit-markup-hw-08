@@ -1,20 +1,16 @@
 .peculiarities {
     background-color: var(--background-title-color);
-    padding-top: 94px;
-    padding-bottom: 94px;
+
   }
   
   .peculiarities-list {
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
   }
   
-  .peculiarities-item {
-    max-width: 270px;
-  }
-  
   .thumb {
-    width: 270px;
+    width: 450px;
     height: 120px;
     border-radius: 4px;
     background-color: #f5f4fa;
@@ -22,7 +18,25 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 30px;
+    @media screen and (min-width: 768px) {
+      width: 354px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 270px;
+    }
   }
+
+  .peculiarities-item {
+    max-width: 100%;
+    @media screen and (min-width: 768px) {
+      width: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+  
+  
   
   .peculiarities-title {
     font-weight: 700;
@@ -32,6 +46,10 @@
     text-transform: uppercase;
     color: var(--main-title-color);
     margin-bottom: 10px;
+    text-align: center;
+    @media screen and (min-width: 768px) {
+      text-align: left;
+    }
   }
   
   .peculiarities-text {

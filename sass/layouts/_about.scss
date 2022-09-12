@@ -1,5 +1,9 @@
 .about {
+    display: none;
+    @media screen and (min-width: 1200px) {
+      display: flex;
     padding-bottom: 94px;
+   }
   }
   
   .about-title {

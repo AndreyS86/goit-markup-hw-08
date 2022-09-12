@@ -1,6 +1,7 @@
 .filter__list {
   display: flex;
-  column-gap: 8px;
+  flex-wrap: wrap;
+  gap: 8px;
   justify-content: center;
   margin-bottom: 50px;
 }
