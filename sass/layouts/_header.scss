@@ -6,9 +6,12 @@
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
   padding-top: 24px;
   padding-bottom: 25px;
+  @media screen and (min-width: 1200px){
+    margin-right: 93px;
+  }
 }
 
 .header__span {
@@ -17,8 +20,14 @@
 
 .navigation {
   display: none;
-  margin-right: 318px;
+  margin-right: 96px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 318px;
+  }
 }
 
 .navigation__list {

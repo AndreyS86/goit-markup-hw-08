@@ -107,9 +107,14 @@ img {
 }
 
 .header__logo {
-  margin-right: 93px;
+  margin-right: 88px;
   padding-top: 24px;
   padding-bottom: 25px;
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
 }
 
 .header__span {
@@ -118,8 +123,18 @@ img {
 
 .navigation {
   display: none;
-  margin-right: 318px;
+  margin-right: 96px;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .navigation {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation {
+    margin-right: 318px;
+  }
 }
 
 .navigation__list {
@@ -1102,27 +1117,51 @@ img {
 }
 @media screen and (min-width: 768px) {
   .contacts {
-    display: flexz;
+    display: block;
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts {
+    display: flex;
+    padding-top: 32px;
+    padding-bottom: 32px;
   }
 }
 
 .contacts__link,
 .contacts__tel {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   color: var(--text-secondary-color);
   display: flex;
   align-items: center;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .contacts__link:hover, .contacts__link:focus,
 .contacts__tel:hover,
 .contacts__tel:focus {
   color: var(--link-btn-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link,
+.contacts__tel {
+    font-size: 14px;
+    line-height: 1.14;
+    padding-bottom: 0;
+  }
+}
+
+.contacts__link {
+  padding-bottom: 10px;
+}
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-bottom: 0;
+  }
 }
 
 .contacts__icon {
@@ -1156,18 +1195,30 @@ img {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--link-btn-color);
+}
+@media screen and (min-width: 1200px) {
+  .logo {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 
 .logo__span {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   max-width: 145px;
+}
+@media screen and (min-width: 1200px) {
+  .logo__span {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }/*# sourceMappingURL=main.css.map */
