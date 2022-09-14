@@ -16,18 +16,22 @@
     <link rel="stylesheet" href="./css/main.min.css">
   </head>
   <body>
-   <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <a lang="en" href="#" class="logo header__logo link"
-          >Web<span class=" logo__span header__span">Studio</span></a
+          >Web<span class="logo__span header__span">Studio</span></a
         >
         <nav class="navigation">
           <ul class="navigation__list list">
             <li class="navigation__item">
-              <a href="./index.html" class="navigation__link link">Студія</a>
+              <a href="./index.html" class="navigation__link link "
+                >Студія</a
+              >
             </li>
             <li class="navigation__item">
-              <a href="./portfolio.html" class="navigation__link link current">Портфоліо</a>
+              <a href="./portfolio.html" class="navigation__link link current"
+                >Портфоліо</a
+              >
             </li>
             <li class="navigation__item">
               <a href="#" class="navigation__link link">Контакти</a>
@@ -38,8 +42,7 @@
           <li class="contacts__item">
             <a href="info@devstudio.com" class="contacts__link link">
               <svg class="contacts__icon" width="16" height="12">
-                <use href="./imges/icons.svg#icon-envelope-1">
-                </use>
+                <use href="./imges/icons.svg#icon-envelope-1"></use>
               </svg>
               info@devstudio.com
             </a>
@@ -47,15 +50,72 @@
           <li class="contacts__item">
             <a href="tel:+380961111111" class="contacts__tel link">
               <svg class="contacts__icon" width="10" height="16">
-                <use href="./imges/icons.svg#icon-smartphone">
-                </use>
-                </svg>
-                +38 096 111 11 11
+                <use href="./imges/icons.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11
             </a>
           </li>
         </ul>
+        <button type="button" class="menu-btn-open" data-menu-open>
+          <svg class="" width="40 " height="40">
+          <use href="./imges/icons.svg#icon-menu_40px"></use>
+        </svg></button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-btn-close"data-menu-close>
+              <svg class="hero-btn-close" width="19" height="19">
+                <use href="./imges/icons.svg#icon-close"></use>
+              </svg>
+            </button>
+            <nav class="mob-menu__navigation">
+              <ul class="mob-menu__list list">
+                <li class="mob-menu__item">
+                  <a href="./index.html" class="mob-menu__link link "
+                    >Студія</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="./portfolio.html" class="mob-menu__link link current"
+                    >Портфоліо</a
+                  >
+                </li>
+                <li class="mob-menu__item">
+                  <a href="#address" class="mob-menu__link link">Контакти</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <ul class="menu-contacts list">
+            <li class="menu-contacts__item">
+              <a href="tel:+380961111111" class="menu-contacts__tel link">
+                +38 096 111 11 11
+              </a>
+            </li>
+            <li class="menu-contacts__item">
+              <a href="info@devstudio.com" class="menu-contacts__link link">
+                info@devstudio.com
+              </a>
+            </li>
+          </ul>
+          <ul class="menu-soc list">
+            <li class="menu-soc__item">
+              <a href="#" class="menu-soc__link link">Instagram</a>
+            </li>
+            <li class="menu-soc__item">
+              <a href="#" class="menu-soc__link link">Twitter</a>
+            </li>
+            <li class="menu-soc__item">
+              <a href="#" class="menu-soc__link link">Facebook</a>
+            </li>
+            <li class="menu-soc__item">
+              <a href="#" class="menu-soc__link link">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="works section">
         <div class="container filter">
@@ -160,40 +220,42 @@
             </a>
             </li>
             <li class="works-item">
-             <a href="" class="works-item-link link">
-              <div class="works-top-wrap">
-                <picture>
-                  <source
-                  srcset="
-                    ./imges/desctop/img10.jpg    1x,
-                    ./imges/desctop/img10-2x.jpg 2x
-                  "
-                  media="(min-width: 1200px)"
+              <a href="" class="works-item-link link">
+                <div class="works-top-wrap">
+                  <picture>
+                    <source
+                    srcset="
+                      ./imges/desctop/img10.jpg    1x,
+                      ./imges/desctop/img10-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                    />
+                    <source
+                    srcset="
+                      ./imges/tablet/img10.jpg    1x,
+                      ./imges/tablet/img10-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                    />
+                    <source
+                    srcset="
+                      ./imges/mobile/img10.jpg    1x,
+                      ./imges/mobile/img10-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                    />
+                    <img
+                    src="./imges/mobile/img10.jpg"
+                    width="450"
+                    height="294"
+                    alt="Постер New Orlean vs Golden Star"
                   />
-                  <source
-                  srcset="
-                    ./imges/tablet/img10.jpg    1x,
-                    ./imges/tablet/img10-2x.jpg 2x
-                  "
-                  media="(min-width: 768px)"
-                  />
-                  <source
-                  srcset="
-                    ./imges/mobile/img10.jpg    1x,
-                    ./imges/mobile/img10-2x.jpg 2x
-                  "
-                  media="(max-width: 767px)"
-                  />
-                  <img
-                  src="./imges/mobile/img10.jpg"
-                  width="450"
-                  height="294"
-                  alt="Ресторан Seafood"
-                />
+              <p class="works-top-text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
               </div>
               <div class="works-border">
-                <h2 class="works-item-title" >Ресторан <span lang="en">Seafood</span></h2>
-                <p class="works-item-text">Додаток</p>  
+                <h2 class="works-item-title" >
+                  Ресторан<span lang="en">Seafood</span></h2>
+                  <p class="works-item-text">Додаток</p>
               </div>
             </a>
             </li>
@@ -436,65 +498,67 @@
         </div>
       </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__contacts">
-          <a lang="en" href="#" class="logo footer__logo link"
-            >Web<span class="logo__span footer__span">Studio</span></a
-          >
-          <address class="address">
-            <a
-              href="https://goo.gl/maps/jEp3xoVWDoY25PXZ6"
-              target="_blank"
-              class="address__link link"
-              >м. Київ, пр-т Лесі Українки, 26</a
+        <div class="footer__tablet">
+          <div class="footer__contacts">
+            <a lang="en" href="#" class="logo footer__logo link"
+              >Web<span class="logo__span footer__span">Studio</span></a
             >
-            <ul class="address__list list">
-              <li class="address__item">
-                <a href="info@devstudio.com" class="address__mail link"
-                  >info@devstudio.com</a
-                >
+            <address class="address" id="address">
+              <a
+                href="https://goo.gl/maps/jEp3xoVWDoY25PXZ6"
+                target="_blank"
+                class="address__link link"
+                >м. Київ, пр-т Лесі Українки, 26</a
+              >
+              <ul class="address__list list">
+                <li class="address__item">
+                  <a href="info@devstudio.com" class="address__mail link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer-item">
+                  <a href="tel:+380961111111" class="address__tel link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__soc">
+            <p class="footer__soc-title">приєднуйтесь</p>
+            <ul class="soc list">
+              <li class="soc__items">
+                <a href="https://www.instagram.com/" class="soc__link link soc__link--bcg">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./imges/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer-item">
-                <a href="tel:+380961111111" class="address__tel link"
-                  >+38 096 111 11 11</a
-                >
+              <li class="soc__items">
+                <a href="https://twitter.com/?lang=ru" class="soc__link link soc__link--bcg">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./imges/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__items">
+                <a href="https://www.facebook.com/" class="soc__link link soc__link--bcg">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./imges/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="soc__items">
+                <a href="https://ua.linkedin.com/" class="soc__link link soc__link--bcg">
+                  <svg class="footer-soc-icon" width="20" height="20">
+                    <use href="./imges/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="footer__soc">
-          <p class="footer__soc-title">приєднуйтесь</p>
-          <ul class="soc list">
-            <li class="soc__items">
-              <a href="" class="soc__link link soc__link--bcg ">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./imges/icons.svg#icon-instagram-2"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__items">
-              <a href="" class="soc__link link soc__link--bcg ">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./imges/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__items">
-              <a href="" class="soc__link link soc__link--bcg ">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./imges/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="soc__items">
-              <a href="" class="soc__link link soc__link--bcg ">
-                <svg class="footer-soc-icon" width="20" height="20">
-                  <use href="./imges/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="subscription">
           <p class="subscription__title">Підпишіться на розсилку</p>
@@ -518,6 +582,7 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
