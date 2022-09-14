@@ -3,6 +3,9 @@
   display: none;
   gap: 30px;
   align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flexz;
+  }
 }
 
 .contacts__link,

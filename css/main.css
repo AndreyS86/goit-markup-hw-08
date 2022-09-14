@@ -759,9 +759,19 @@ img {
 }
 
 .menu-btn-open {
+  display: flex;
+  position: relative;
+  margin-left: auto;
   width: 40px;
   height: 40px;
-  margin-left: auto;
+  border-color: transparent;
+  padding: 0;
+  background-color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .menu-btn-open {
+    display: none;
+  }
 }
 
 .mob-menu {
@@ -780,6 +790,10 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.mob-menu__list {
+  margin-bottom: 302;
 }
 
 .mob-menu__item {
@@ -1085,6 +1099,11 @@ img {
   display: none;
   gap: 30px;
   align-items: center;
+}
+@media screen and (min-width: 768px) {
+  .contacts {
+    display: flexz;
+  }
 }
 
 .contacts__link,

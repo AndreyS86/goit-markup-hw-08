@@ -1,8 +1,17 @@
 .menu-btn-open {
-  width: 40px;
-  height: 40px;
-  margin-left: auto;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    width: 40px;
+    height: 40px;
+    border-color: transparent;
+    padding: 0;
+    background-color: #FFFFFF;
+    @media screen and (min-width: 768px) {
+        display: none;
+    }
 }
+
 
 .mob-menu {
   position: fixed;
@@ -23,9 +32,11 @@
 }
 
 .mob-menu__navigation {
+
 }
 
 .mob-menu__list {
+  margin-bottom: 302;
 }
 
 .mob-menu__item {
