@@ -19,10 +19,12 @@
   background-color: #fff;
   top: 0;
   left: 0;
+  max-width: 767px;
   width: 100vw;
   height: 100vh;
   padding-top: 48px;
   padding-bottom: 48px;
+  transform: translateX(0, 0) scale(1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   >.container {
     height: 100%;
@@ -31,7 +33,25 @@
     justify-content: space-between;
   }
 }
+.mob-menu.is-hidden {
+  transform: translate(0, 0) scale(0) ;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
+.menu-btn-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border-color: transparent;
+  transform: translateX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+}
 
 .mob-menu__list {
   margin-bottom: 302;
@@ -47,6 +67,11 @@
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: #212121;
+  &:hover,
+  &:focus {
+    color: var(--link-btn-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 }
 
 .menu-contacts {
@@ -63,6 +88,11 @@
   line-height: 1.17;
   letter-spacing: 0.02em;
   color: #757575;
+  &:focus,
+  &:hover {
+ color: #2196f3;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ }
 }
 
 .menu-contacts__tel {
@@ -73,24 +103,21 @@
   color: #2196f3;
 }
 
-.menu-btn-close {
-  position: absolute;
-  top: 10px;
-  right: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  background-color: transparent;
-  border-color: transparent;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+.menu-btn-close:focus,
+.menu-btn-close:hover {
+ fill: #2196f3;
+ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-soc {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
+}
+.menu-soc__item:last-child {
+  border-right: none;
 }
 
 .menu-soc__item {
@@ -103,17 +130,11 @@
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: #2196f3;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.menu-soc__link::after {
-  content: "";
-  position: relative;
-  left: 10px;
-  width: 22px;
-  height: 0;
-  border: 1px solid rgba(33, 33, 33, 0.2);
-transform: rotate(90deg);
-}
+
 
 .current {
   color: var(--link-btn-color);

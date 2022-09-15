@@ -21,12 +21,17 @@
 
 .footer__tablet {
   display: block;
+  margin-bottom: 60px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     text-align: center;
+
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
   }
 }
 
@@ -40,7 +45,6 @@
 }
 
 .address {
-  margin-bottom: 9px;
   margin-top: 20px;
 }
 
@@ -110,8 +114,7 @@
   display: block;
   justify-content: center;
   gap: 10px;
-  align-items: center;
-  margin-bottom: 60px;
+  align-items: baseline;
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
   }
@@ -130,7 +133,7 @@
 
 .subscription {
   margin-left: auto;
-
+  align-items: baseline;
 }
 
 .subscription__title {

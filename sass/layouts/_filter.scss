@@ -2,8 +2,10 @@
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
-  justify-content: center;
   margin-bottom: 50px;
+  @media screen and (min-width: 768px) {
+  justify-content: center;
+ }
 }
 
 .filter__btn {
