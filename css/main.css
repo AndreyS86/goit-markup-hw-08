@@ -797,6 +797,9 @@ img {
   color: var(--main-title-color);
 }
 
+.works-item {
+  display: flex;
+}
 @media screen and (min-width: 768px) {
   .works-item {
     flex-basis: calc((100% - 30px) / 2);
@@ -824,7 +827,8 @@ img {
 }
 
 .works-item-link {
-  display: block;
+  display: flex;
+  flex-wrap: wrap;
 }
 .works-item-link:focus, .works-item-link:hover {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
